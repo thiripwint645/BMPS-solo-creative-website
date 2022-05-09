@@ -1,0 +1,169 @@
+/*👉HTML ,Body👈*/
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #212226;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+section,
+footer {
+    background-color: #fff;
+    overflow: hidden;
+}
+
+
+/*👉Button👈*/
+
+.btn-general {
+    font-family: "Raleway", sans-serif;
+    border-radius: 28px;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 0 6px;
+    padding: 12px 46px 12px 46px;
+    transition: all 0.5s;
+}
+
+
+/*👉Preloader👈*/
+
+#preloader {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#status {
+    background-image: url("/solo-images/preloader/preloader.gif");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 50%;
+    left: 50%;
+    margin-left: -35px;
+    margin-right: -35px;
+}
+
+
+/*👉Home Section👈*/
+
+header {
+    height: 100%;
+}
+
+#home-bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    /*👉   scroll တွေဖျောက်ဖို့ width တွေ height တွေ auto ပေးဖို့လို👈*/
+    width: auto;
+    height: auto;
+    z-index: -1;
+    /*👉 အားလုံးရဲ့အောက်ဆုံး👈*/
+    background-image: url(../../video/solo.jpg);
+    background-size: cover;
+}
+
+#home-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /*👉   background image နဲ့ အပြိုင် postion fixed ပေးမယ်👈*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+/*👉css ရဲ့ table method ကို သုံးလိုက်တာ Online w 3 school မှာရှိ👈*/
+
+#home-content {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#home-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#home-heading h1 {
+    color: #fff;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+    /*👉  width height control လုပ်ချင်လို့👈*/
+    display: inline-block;
+}
+
+#home-heading span {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+#home-text p {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 100;
+    margin: 8px 0 30px 0;
+}
+
+.btn-home {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-home:hover,
+.btn-home:focus {
+    color: #fff;
+    background-color: #f4c613;
+    border: 1px solid #f4c613;
+}
+
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    margin-left: -16px;
+    font-size: 32px;
+}
+
+#arrow-down:hover,
+#arrow-down:focus {
+    color: #f4c613;
+}
